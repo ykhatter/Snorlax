@@ -1,0 +1,214 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey snow
+    - hello snow
+    - hi snow
+    - hello there
+    - good morning
+    - good evening
+    - hey there 
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hey sno
+    - hi sno
+    - hello sno
+    - snow
+    - hello
+    - hi
+    - hey
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - wrong
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: tell_name
+  examples: |
+    - what is your name ?
+    - tell me your name ?
+    - what do people call you ?
+    - what should i call you ?
+    - tell me about yourself
+
+- intent: companies
+  examples: |
+    - what are the companies that visited thapar ?
+    - top companies visited your university
+    - list of companies
+    - big companies visiting thapar
+    - top recruiters 
+    - top companies
+    - faang
+
+- intent: hostel_for_boys
+  examples: |
+    - what are hostel facilities at thapar for boys?
+    - what are boys hostel facilities at thapar?
+    - boys hostels
+    - boys hostel
+    - hostel for boys
+    - list of boys hostel
+
+- intent: hostel_for_girls
+  examples: |
+    - what are hostel facilities at thapar for girls?
+    - what are girls hostel facilities at thapar?
+    - girls hostels
+    - hostel for girls
+    - list of girls hostel
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: branches
+  examples: |
+    - what are the branches offered at thapar ?
+    - top branches
+    - list of branches
+    - branch list
+    - engineering branches
+
+- intent: doaa
+  examples: |
+    - who is the doaa ?
+    - dean of academic affairs
+    - dean of academic
+    - head of academic
+    - academic head
+
+- intent: dosa
+  examples: |
+    - who is the dosa ?
+    - dean of student affairs
+    - dean of students
+    - head of students
+    - students head
+
+- intent: director
+  examples: |
+    - who is the director ?
+    - director
+    - director of thapar university
+    - university's director
+
+- intent: placement
+  examples: |
+    - how are the placements at thapar ?
+    - top placement
+    - placement record
+    - placement
+    - placements
+    - placement stats
+
+- intent: cutoff
+  examples: |
+    - what is the cutoff of  ?
+    - cutoff
+    - closing rank
+    - closing percentile
+    - eligibility
+    - cutoff of thapar
+    - tell me about the cutoff of thapar
+  
+- intent: inside_punjab
+  examples: |
+    - I am from inside punjab
+    - inside punjab
+    - punjab
+    - inside quota
+    - inside
+
+- intent: outside_punjab
+  examples: |
+    - I am from outside punjab
+    - outside punjab
+    - delhi
+    - outside quota
+    - outside
+
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - who is president of India
+    - what is the time now
+    - where is america
+
+- intent: fees
+  examples: |
+    - Tell me about fee structure
+    - Fees
+    - Fees of other branches
+    - Fee structure
+ 

@@ -1,0 +1,211 @@
+version: "3.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: happy name path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tell_name
+  - action: utter_name
+
+- story: boys hostel path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: hostel_for_boys
+  - action: utter_boys_hostel
+  - intent: deny
+  - action: utter_sorry
+
+- story: boys hostel path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: hostel_for_boys
+  - action: utter_boys_hostel
+  - intent: affirm
+  - action: utter_goodbye
+
+- story: girls hostel path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: hostel_for_girls
+  - action: utter_girls_hostel
+  - intent: affirm
+  - action: utter_goodbye
+
+- story: girls hostel path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: hostel_for_girls
+  - action: utter_girls_hostel
+  - intent: deny
+  - action: utter_sorry
+
+- story: companies path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: companies
+  - action: utter_companies
+  - intent: deny
+  - action: utter_sorry
+
+- story: companies path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: companies
+  - action: utter_companies
+  - intent: affirm
+  - action: utter_goodbye
+
+- story: branches path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: branches
+  - action: utter_branches
+  - intent: deny
+  - action: utter_sorry
+
+- story: branches path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: branches
+  - action: utter_branches
+  - intent: affirm
+  - action: utter_goodbye
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - intent: deny
+  - action: utter_sorry
+
+- story: doaa path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: doaa
+  - action: utter_doaa
+  - intent: deny
+  - action: utter_sorry
+
+- story: dosa path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: dosa
+  - action: utter_dosa
+  - intent: deny
+  - action: utter_sorry
+
+- story: director path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: director
+  - action: utter_director
+  - intent: deny
+  - action: utter_sorry
+
+- story: placement path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: placement
+  - action: utter_placement
+  - intent: deny
+  - action: utter_sorry
+
+- story: placement path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: placement
+  - action: utter_placement
+  - intent: affirm
+  - action: utter_goodbye
+
+- story: cutoff path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: cutoff
+  - action: utter_which_quota
+  - intent: inside_punjab
+  - action: utter_punjab_quota
+  - intent: deny
+  - action: utter_sorry
+
+- story: cutoff path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: cutoff
+  - action: utter_which_quota
+  - intent: outside_punjab
+  - action: utter_outside_punjab_quota
+  - intent: deny
+  - action: utter_sorry
+
+- story: cutoff path 3
+  steps:
+  - intent: cutoff
+  - action: utter_which_quota
+  - intent: inside_punjab
+  - action: utter_punjab_quota
+  - intent: affirm
+  - action: utter_goodbye
+
+- story: cutoff path 4
+  steps:
+  - intent: cutoff
+  - action: utter_which_quota
+  - intent: outside_punjab
+  - action: utter_outside_punjab_quota
+  - intent: affirm
+  - action: utter_goodbye
+
+- story: Fee structure
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fees
+  - action: utter_fees
+  - intent: affirm
+  - action: utter_goodbye
+
+- story: Fee structure
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: fees
+  - action: utter_fees
+  - intent: deny
+  - action: utter_sorry

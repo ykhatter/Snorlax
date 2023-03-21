@@ -1,0 +1,139 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - tell_name
+  - companies
+  - hostel_for_boys
+  - hostel_for_girls
+  - branches
+  - doaa
+  - dosa
+  - director
+  - placement
+  - cutoff
+  - inside_punjab
+  - outside_punjab
+  - out_of_scope
+  - fees
+
+responses:
+  utter_out_of_scope:
+  - text: "Sorry, I didn't get it. Please rephrase what you said."
+  
+  utter_sorry:
+  - text: "Sorry for the inconvience. try asking the question again."
+
+  utter_greet:
+  - text: "Hey! Welcome to Thapar University How can I help you ?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_name:
+  - text: "My name is SNOW, How can I help you ?"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_boys_hostel:
+  - text: "Hostel allocated to boys are \n
+    Hostel B, C, H, J, K, L, M, O"
+
+  utter_girls_hostel:
+  - text: "Hostel allocated to girls are \n
+    Hostel E, G, I, N, PG"
+
+  utter_branches:
+    - text: "Branches offered at thapar university are: \n 
+    Computer Engineering\n
+    Computer Science and Engineering\n
+    Computer Science and Business System\n
+    Electronics and Computers\n
+    Electrical and Computer\n
+    Electronics and Communication\n
+    Electronics and Instrumentation Control\n
+    Electrical Engineering\n
+    Mechanical Engineering\n
+    Mechanical Production\n
+    Mechatronics\n
+    Chemical Engineering\n
+    Civil Engineering\n
+    Biomedical and Biotechnology\n
+    ECE-MBA\n
+    MEE-MBA\n
+    "
+
+  utter_doaa:
+    - text: "Doaa of our university is Dr. Maninder Singh, You can mail your queries @ doaa@thapar.edu "
+
+  utter_dosa:
+    - text: "Dosa of our university is Dr. Inderveer Chana, You can mail your queries @ dosa@thapar.edu "
+
+  utter_director:
+    - text: "Director of our university is Prof. Prakash Gopalan, You can mail your queries @ director@thapar.edu "
+
+  utter_companies:
+  - text: "Top companies that visited our university are\n
+    Adobe\n
+    Amazon\n
+    Apple\n
+    American Express\n 
+    Bane\n 
+    Black Rock\n 
+    Cisco\n 
+    Deloitte\n 
+    Google\n
+    IBM\n
+    Infosys\n
+    JP Morgan\n
+    Maruti Suzuki\n
+    Microsoft\n
+    Samsung\n 
+    Tata Motors\n
+    Wipro\n
+    Zomato etc\n"
+
+  utter_punjab_quota:
+  - text: "Cutoff for Inside Punjab Quota are: "
+
+  utter_outside_punjab_quota:
+  - text: "Cutoff for Outside Punjab Quota are: "
+  
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_which_quota:
+    - text: "Inside Punjab or Outside Punjab"
+
+  utter_placement:
+    - text: "For 2020-2021 batch, 388 companies visited the campus and there were 1325 total offers.\n
+            The average package of Thapar is around 8LPA."
+  
+  utter_fees:
+    - text: "FEE PAYABLE ONCE ON ADMISSION\n
+             Admission Fee - 13,000\n 
+             Institute Security - 10,000\n
+             Total(₹) - 23,000\n\n
+            FEE PAYABLE EACH SEMESTER\n
+             COE, CSE, CSBS\n
+             Total(₹) - 2,18,900\n
+             Others\n
+             Total(₹) - 1,95,300\n"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
